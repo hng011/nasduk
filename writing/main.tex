@@ -1,34 +1,4 @@
-\documentclass[a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{times}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{setspace}
-\usepackage{array}
-\usepackage{tocloft}
-\usepackage[paperwidth=21.5cm, paperheight=29.7cm, top=4cm, bottom=3cm, left=4cm, right=3cm]{geometry}
-
-\newcommand{\fontChapterTitle}{14pt}
-\newcommand{\fontSubChapterTitle}{12pt}
-
-\newcommand{\thesisTitle}{\uppercase{None}}
-\newcommand{\name}{Hans Naufal Granito}
-\newcommand{\npm}{50421591}
-\newcommand{\signDate}{Jakarta, Day Month 2025}
-
-\newcommand{\buLintang}{Prof. Dr. Lintang Yuniar Banowosari, SKom., MSc.}
-\newcommand{\buElfitrin}{Dr. Elfitrin Syahrul, ST., MT.}
-\newcommand{\buMarliza}{Dr. Marliza Ganefi Gumay, Skom., MMSI.}
-\newcommand{\pakRavi}{Dr. Ravi Ahmad Salim}
-\newcommand{\pakWahyudi}{Prof. Dr. Wahyudi Priyono}
-\newcommand{\buMargianti}{Prof. Dr. E.S. Margianti, SE., MM.}
-\newcommand{\pakAdang}{Prof. Dr.-Ing. Adang Suhendra SSi., SKom., MSc.}
-\newcommand{\pakEdi}{Dr. Edi Sukirman, SSi., MM., M.I., Kom.}
-\newcommand{\mySupervisor}{None}
-
-\setlength{\fboxrule}{2pt}
-
-\renewcommand{\baselinestretch}{1.5} % set line spacing
+\input{modules/utils.tex}
 
 \begin{document}
     \fontsize{\fontSubChapterTitle}{0.5cm}\selectfont % set font to 12pt
@@ -283,19 +253,19 @@
 
     % Bagian Isi
     % Bab 1 Pendahuluan
-    \input{chapters/chapter1.tex}
+    \input{modules/chapter1.tex}
 
     % Bab 2 Tinjauan Pustaka
-    \input{chapters/chapter2.tex}
+    \input{modules/chapter2.tex}
 
     % Bab 3 Metode Penelitian
-    \input{chapters/chapter3.tex}
+    \input{modules/chapter3.tex}
 
     % Bab 4 Hasil dan Pembahasan
-    \input{chapters/chapter4.tex}
+    \input{modules/chapter4.tex}
 
     % Bab 5 Penutup
-    \input{chapters/chapter5.tex}
+    \input{modules/chapter5.tex}
 
     % Bagian Akhir
     % Daftar Pustaka
