@@ -1,0 +1,317 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{tocloft}
+\usepackage[paperwidth=21.5cm, paperheight=29.7cm, top=4cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+
+\newcommand{\fontChapterTitle}{14pt}
+\newcommand{\fontSubChapterTitle}{12pt}
+
+\newcommand{\thesisTitle}{\uppercase{None}}
+\newcommand{\name}{Hans Naufal Granito}
+\newcommand{\npm}{50421591}
+\newcommand{\signDate}{Jakarta, Day Month 2025}
+
+\newcommand{\buLintang}{Prof. Dr. Lintang Yuniar Banowosari, SKom., MSc.}
+\newcommand{\buElfitrin}{Dr. Elfitrin Syahrul, ST., MT.}
+\newcommand{\buMarliza}{Dr. Marliza Ganefi Gumay, Skom., MMSI.}
+\newcommand{\pakRavi}{Dr. Ravi Ahmad Salim}
+\newcommand{\pakWahyudi}{Prof. Dr. Wahyudi Priyono}
+\newcommand{\buMargianti}{Prof. Dr. E.S. Margianti, SE., MM.}
+\newcommand{\pakAdang}{Prof. Dr.-Ing. Adang Suhendra SSi., SKom., MSc.}
+\newcommand{\pakEdi}{Dr. Edi Sukirman, SSi., MM., M.I., Kom.}
+\newcommand{\mySupervisor}{None}
+
+\setlength{\fboxrule}{2pt}
+
+\renewcommand{\baselinestretch}{1.5} % set line spacing
+
+\begin{document}
+    \fontsize{\fontSubChapterTitle}{0.5cm}\selectfont % set font to 12pt
+    \pagestyle{empty}
+    \pagenumbering{roman}
+    \setcounter{page}{1} 
+
+    % Title Page 
+    \addcontentsline{toc}{section}{Halaman Judul}
+    \begin{center}
+        {\fontsize{\fontChapterTitle}{0.5cm}\selectfont 
+        \textbf{UNIVERSITAS GUNADARMA}} \\
+         
+        \textbf{FAKULTAS TEKNOLOGI INDUSTRI} \\ [3em]
+        
+        \includegraphics[width=6cm, height=6cm, keepaspectratio]{assets/logo-gundar.png} \\ [1em]
+        
+        \text{SKRIPSI} \\[2em]
+    
+        % Details in a Box
+        \fbox{
+        \begin{minipage}{0.85\textwidth}  % Box width
+            \newcommand{\vhspaceval}{0.3cm}
+            \vspace{\vhspaceval}  % Vertical padding
+            \begin{center}
+                \thesisTitle
+            \end{center}
+            \hspace{\vhspaceval}
+            \begin{tabular}{ll}
+                \text{Nama} & : \name \\ 
+                \text{NPM} & : \npm \\ 
+                \text{Fakultas} & : Teknologi Industri \\ 
+                \text{Jurusan} & : Informatika \\ 
+                \text{Pembimbing} & : \mySupervisor \\ 
+            \end{tabular}
+            \vspace{\vhspaceval}
+        \end{minipage}
+        } \\[4em]
+
+        \text{Diajukan Guna Melengkapi Sebagian Syarat}\\
+        \text{Dalam Mencapai Gelar Sarjana Strata Satu (S1)}\\
+        \textbf{JAKARTA}\\
+        \textbf{2025}
+        
+    \end{center}
+
+    % Originality & Publication statement 
+    \newpage
+    \pagestyle{plain}
+    
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Pernyataan Orisinalitas dan Publikasi
+            } 
+            \addcontentsline{toc}{section}{Pernyataan Orisinalitas dan Publikasi}
+        }
+    }
+    
+    Saya yang bertanda tangan di bawah ini :\\[1em]
+    \begin{tabular}{p{3cm}p{0.1cm}p{10cm}}
+        \text{Nama} & : & \name \\ 
+        \text{NPM} & : & \npm \\
+        \text{Judul Skripsi} & : & \thesisTitle \\ 
+        \text{Tanggal Sidang} & : & None \\
+        \text{Tanggal Lulus} & :  & None \\[2em]
+    \end{tabular} 
+
+    Menyatakan bahwa tulisan di atas merupakan hasil karya saya sendiri dan 
+    dapat dipublikasikan sepenuhnya oleh Universitas Gunadarma. Segala kutipan 
+    dalam bentuk apapun telah mengikuti kaidah dan etika yang berlaku. Semua hak 
+    cipta dari logo serta produk yang disebut dalam buku ini adalah milik 
+    masing-masing pemegang haknya, kecuali disebutkan lain. Mengenai isi dan 
+    tulisan merupakan tanggung jawab Penulis, bukan Universitas Gunadarma.\\
+
+    Demikianlah pernyataan ini dibuat dengan sebenar-benarnya dan 
+    dengan penuh kesadaran \\[2em]
+
+    \begin{flushleft}
+         \begin{tabular}{c}
+            \signDate \\ [4em]
+            (\name) \\
+         \end{tabular} 
+    \end{flushleft}
+
+    % Approval
+    \newpage
+     
+    \begin{center}
+        
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Lembar Pengesahan \\[2em]
+            } 
+            \addcontentsline{toc}{section}{Lembar Pengesahan}
+        }
+        
+        \newcommand{\spaceTitle}{0.5em}
+        \textbf{KOMISI PEMBIMBING} \\[\spaceTitle]    
+        \begin{tabular}{|c|p{10cm}|c|}
+            \hline 
+                \multicolumn{1}{|c|}{\textbf{NO}} & 
+                \multicolumn{1}{c|}{\textbf{NAMA}} & 
+                \multicolumn{1}{c|}{\textbf{KEDUDUKAN}} \\
+            \hline 
+                1. & \buLintang & Ketua \\
+            \hline 
+                2. & \buElfitrin & Anggota \\
+            \hline 
+                3. & \buMarliza  & Ketua \\
+            \hline
+        \end{tabular} \\[3em]
+
+        \textbf{PANITIA UJIAN} \\[\spaceTitle]
+        \begin{tabular}{|c|p{10cm}|c|}
+            \hline 
+                \multicolumn{1}{|c|}{\textbf{NO}} & 
+                \multicolumn{1}{c|}{\textbf{NAMA}} & 
+                \multicolumn{1}{c|}{\textbf{KEDUDUKAN}} \\
+            \hline 
+                1. & \buLintang & Ketua \\
+            \hline 
+                2. & \buElfitrin & Sekretaris \\
+            \hline 
+                3. & \buLintang  & Anggota \\
+            \hline 
+                4. & \buElfitrin  & Anggota \\
+            \hline 
+                5. & \buMarliza  & Anggota \\
+            \hline
+        \end{tabular} \\[4em]
+
+        \text{Mengetahui,} \\[1em]
+    
+    \end{center} 
+
+    \noindent {
+        \parbox{0.4\linewidth}{
+            \centering Pembimbing \\[2cm]
+            (\mySupervisor)
+        }
+        \parbox{0.6\linewidth}{
+            \centering Bagian Sidang Ujian \\[2cm] % Add space for the signature
+            (\pakEdi)
+        }
+    }
+
+    % Abstract
+    \newpage
+
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Abstrak \\[1em]
+            } 
+            \addcontentsline{toc}{section}{Abstrak}
+        }
+    }
+
+    % Acknowledgments 
+    \newpage
+
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Kata Pengantar \\[1em]
+            } 
+            \addcontentsline{toc}{section}{Kata Pengantar}
+        }
+    }
+
+    Segala puji dan syukur penulis panjatkan ke hadirat Allah SWT. Yang Maha Kuasa,
+    atas segala berkat, anugerah, dan karunia-Nya yang melimpah. Penulis bersyukur 
+    dapat menyelesaikan Tugas Akhir ini dengan penuh rasa syukur dan terima kasih kepada
+    Allah SWT.
+
+    Tugas akhir ini disusun sebagai salah satu syarat untuk memperoleh gelar Sarjana
+    Komputer dari Universitas Gunadarma. Judul Tugas Akhir ini adalah "\thesisTitle" 
+
+    Dalam perjalanan menyusun Tugas Akhir ini, penulis menyadari bahwa banyak rintangan
+    dan kesulitan yang harus dihadapi. Namun berkat bantuan dan dukungan, serta dorongan
+    dari berbagai pihak, Tugas Akhir ini dapat diselesaikan dengan baik. Penulis ingin
+    mengucapkan terima kasih yang tak terhingga kepada:
+
+    \begin{enumerate}
+        \item \buMargianti, selaku Rektor Universitas Gunadarma.
+        \item \pakAdang, selaku Dekan Fakultas Teknologi Industri Universitas Gunadarma
+        \item \buLintang, selaku Ketua Program Studi Informatika Universitas Gunadarma
+        \item \pakEdi, selaku Kepala Bagian Sidang Ujian Universitas Gunadarma
+        \item \mySupervisor, selaku Dosen Pembimbing yang telah banyak memberikan 
+        bimbingan, arahan, waktu, tenaga, dan kebaikan hati untuk membantu penulis dalam
+        menyelesaikan penulisan ini
+        \item Kedua orang tua beserta adik yang senantiasa mendukung penulis baik secara mental maupun materil
+        dalam menyelesaikan penulisan ini.
+        \item Teman-teman 4IA12 yang banyak memberikan dukungan berupa kritik dan saran 
+        sehingga penulisan ini dapat diselesaikan dengan baik. 
+    \end{enumerate}
+
+    % Table of Contents
+    \newpage
+
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Daftar Isi \\[1em]
+            } 
+            \addcontentsline{toc}{section}{Daftar Isi}
+        }
+        
+        \renewcommand{\cftdotsep}{1} % Adds dots
+        \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Adds dots
+        \renewcommand{\contentsname}{}
+        \setlength{\cftbeforesecskip}{3pt} % Adjust spacing between section entries
+        
+        \tableofcontents
+
+    }
+
+    % List of Tables
+    \newpage
+
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Daftar Tabel \\[1em]
+            } 
+            \addcontentsline{toc}{section}{Daftar Tabel}
+        }
+    }
+
+    % List of Figures
+    \newpage
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Daftar Gambar \\[1em]
+            } 
+            \addcontentsline{toc}{section}{Daftar Gambar}
+        }
+    }
+
+    % List of Appendicies
+    \newpage
+    {\centering
+        {\fontsize{\fontChapterTitle}{0}\selectfont
+            \section*{
+                Daftar Lampiran \\[1em]
+            } 
+            \addcontentsline{toc}{section}{Daftar Lampiran}
+        }
+    }
+
+    % Bagian Isi
+    % Bab 1 Pendahuluan
+    \input{chapters/chapter1.tex}
+
+    % Bab 2 Tinjauan Pustaka
+    \input{chapters/chapter2.tex}
+
+    % Bab 3 Metode Penelitian
+    \input{chapters/chapter3.tex}
+
+    % Bab 4 Hasil dan Pembahasan
+    \input{chapters/chapter4.tex}
+
+    % Bab 5 Penutup
+    \input{chapters/chapter5.tex}
+
+    % Bagian Akhir
+    % Daftar Pustaka
+    \newpage
+
+    {\centering
+        \section*{Daftar Pustaka}
+        \addcontentsline{toc}{section}{Daftar Pustaka}
+    }
+
+    % Lampiran
+    \newpage
+
+    {\centering
+        \section*{Lampiran}
+        \addcontentsline{toc}{section}{Lampiran}
+    }
+
+\end{document}
