@@ -2,6 +2,6 @@ assets/
 main.*
 utils.*
 
-!main.pdf
+main.pdf
 !main.tex
 !utils.tex
