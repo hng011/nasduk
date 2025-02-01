@@ -5,24 +5,37 @@
     % reset the chapter numbering
     
     \pagenumbering{arabic}
-
+    \setcounter{section}{1}
+    \setcounter{subsection}{0}
     {\centering
-        \renewcommand{\thesection}{\arabic{section}.}
-        \section{
+        \renewcommand{\thesection}{\arabic{section}. }
+        \section*{
             \fontsize{\fontChapterTitle}{0}\selectfont
-            Pendahuluan
+            \thesection Pendahuluan
         }
+        \addcontentsline{toc}{section}{1. Pendahuluan}
     }
 
     % Latar Belakang
-    \subsection{Latar Belakang Masalah}
+    {\subsection{\hspace{\subsectionspace}Latar Belakang Masalah}}
+    TEST 123 % TODO
+
+    \vspace{\vspacesubsec}
 
     % Ruang Lingkup
-    \subsection{Ruang Lingkup}
+    {\subsection{\hspace{\subsectionspace}Ruang Lingkup}}
+    TEST 123 % TODO
+    
+    \vspace{\vspacesubsec}
 
     % Tujuan Penelitian
-    \subsection{Tujuan Penelitian}
+    {\subsection{\hspace{\subsectionspace}Tujuan Penelitian}}
+    TEST 123 % TODO
 
+    \vspace{\vspacesubsec}
+    
     % Sistematika Penulisan
-    \subsection{Sistematika Penulisan}
+    {\subsection{\hspace{\subsectionspace}Sistematika Penulisan}}
+    TEST 123 % TODO
 
+    \vspace{\vspacesubsec}
