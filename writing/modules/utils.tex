@@ -1,4 +1,3 @@
-\documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{times}
 \usepackage{graphicx}
@@ -10,6 +9,10 @@
 
 \newcommand{\fontChapterTitle}{14pt}
 \newcommand{\fontSubChapterTitle}{12pt}
+\newcommand{\parindentSize}{4.3em}
+\newcommand{\vspacesubsec}{1em}
+\newcommand{\subsectionspace}{1.3em}
+\newcommand{\subsubsectionspace}{0.6em}
 
 \newcommand{\thesisTitle}{\uppercase{None}}
 \newcommand{\name}{Hans Naufal Granito}
@@ -27,5 +30,17 @@
 \newcommand{\mySupervisor}{None}
 
 \setlength{\fboxrule}{2pt}
+\setlength{\parindent}{\parindentSize}
 
 \renewcommand{\baselinestretch}{1.5} % set line spacing
+
+\makeatletter
+    \renewcommand\subsubsection{\@startsection
+        {subsubsection}
+        {3}
+        {0pt}
+        {\baselineskip} 
+        {0.5em}
+        {\normalfont\bfseries}
+    } 
+\makeatother
